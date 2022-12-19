@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  margin: 0;
+  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #231F20; }
+
+button,
+input {
+  background-color: #231F20; 
+color: whitesmoke;
+border-color: whitesmoke;}
+
+.jumbotron { background-color: #231F20; 
+color:whitesmoke;}
+h1{color: whitesmoke;}
+h2{color: whitesmoke;}
+h3{color: whitesmoke;}
+h4{color: whitesmoke;}
+h5 {color: whitesmoke;}
+p{color: whitesmoke;}.resultpro {
+}
+.horizontal-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.results-container {position: relative;
+  text-align: center;
+  color: white;}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.black1{backgroundcolor: #353935}
+.black2{backgroundcolor: #28282B}
+.black3{backgroundcolor: #1B1212}
+.black4{backgroundcolor: #000000}
+
+
+
+section#resultspage { display:none;}
