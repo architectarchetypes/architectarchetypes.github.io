@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Portfolio Page Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+<section>
+  <div class="container-fluid">
+    <div class="jumbotron text-center mt-2"><img src="images/mainbg.png" class="img-fluid" alt="Placeholder image"> </div>
+  </div>
+</section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>the quiz&nbsp;</h1>
+            <p>plan a public lecture and find out what type of archetype you present&nbsp;&nbsp;</p>
+</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <ul class="list-unstyled">
+              <div>
+                <h5 class="text-center">first things first, you need an outfit. what color do you go with?&nbsp;</h5>
+                <br>
+              </div>
+              
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ1D()">Licorice Black</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ1C()">Oil Black</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button class="black3" onclick = "resultQ1B()">Onyx Black&nbsp;</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button class="black4" onclick = "resultQ1A()">Pure Black</button>
+              </div>
+              
+              <br>
+              
+              <div class="container-fluid text-center">
+                <h5 class="text-center">just for a moment, you consider mixing it up and adding an additional splash of color. what's your go-to color palette?&nbsp;&nbsp;</h5>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ2A()">black on black</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ2B()">black on white</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ2C()">white on black</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ2D()">white on white</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <h5 class="text-center">before your lecture you have the option to sit in on a class, which one do you pick?&nbsp;&nbsp;</h5>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ3A()">Core I Studio</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ3B()">Geometric Disciplines and Architecture Skills</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ3C()">Environmental Technologies in Buildings</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ3D()">Positions: Cultivating Critical Practice</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <h5 class="text-center">what is the main goal or theme of your lecture?&nbsp;</h5>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ4A()">sustainability</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ4B()">recognition&nbsp;</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ4C()">social justice</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ4D()">innovation</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <h5 class="text-center">overall, how would you describe your presentation's vibe?&nbsp;</h5>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ5A()">sophisticated and enlightening</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ5B()">fresh and fun&nbsp;</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ5C()">passionate and urgent</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ5D()">methodical and concise</button>
+              </div>
+              <br>
+              <div>
+                <h5 class="text-center">what aspects of your work will you focus on?&nbsp;</h5>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ6A()">form and geometry</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "result6QB()">materiallity and assembly&nbsp;</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ6C()">functionality and program</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ6D()">social and personal impact</button>
+              </div>
+              <br>
+              <div>
+                <h5 class="text-center">give you're lecture a catchy title to get people in the door.&nbsp;</h5>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button class="text-center" onclick = "resultQ7A()">Within and Without: How are we framing society?</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button class="text-center" onclick = "resultQ7B()">Speaking Char-truth: A history of the architectural relevance and controvery of neon green&nbsp;</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ7C()">Mo Money Mo Problems: Finance and Efficiency in Architecture</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ7D()">The World is on Fire, Who has the Hose?</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <h5 class="text-center">At the start of the lecture you are introduced as someone who works...</h5>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ8A()">At an established firm</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ8B()">At my self owned interdiscplinary firm</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ8C()">In academia</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ8D()">I don't know but it's definitely not architecture</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <h5 class="text-center">you are describing the way two surfaces meet. which term do you use?&nbsp;</h5>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ9A()">stitching</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ9B()">kissing</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ9C()">interfacing</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ9D()">meeting</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <h5 class="text-center">you discuss a project you headed in what used to be an underused handicap parking lot. What did you make?&nbsp;</h5>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ10A()">A residential complex or large house.</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ10B()">A public space, e.g. museum/park.</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ10C()">A revamped parking lot that makes it more accessible to the differently abled.</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ10D()">Actually, I didn't design it; I was sure to think and write critically about it, though.</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <h5 class="text-center">What buzzword do you use most in your lecture?</h5>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ11A()">pedagogy</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ11B()">archive</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button onclick = "resultQ11C()">program</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <button class="align-content-center" onclick = "resultQ11D()">massing</button>
+              </div>
+              <br>
+              <div class="container-fluid text-center">
+                <h5 class="text-center">at the end of the lecture, you take a mental note of the expressions in the audience. everybody looks...</h5>
+              </div>
+              <br>
+         <div class="container-fluid text-center">
+           <button onclick = "resultQ12A()">dazed and confused</button>
+       </div>
+         <br>
+         <div class="container-fluid text-center">
+           <button onclick = "resultQ12B()">fascinated, starstruck, bedazzled</button>
+       </div>
+         <br>
+         <div class="container-fluid text-center">
+           <button onclick = "resultQ12C()">uncomfortable and deeply irked</button>
+       </div>
+         <br>
+         <div class="container-fluid text-center">
+           <button onclick = "resultQ12D()">fully asleep</button>
+       </div>
+         <br>
+              <div class="container-fluid text-center">
+                <button onclick = "updateResult()">Submit</button>
+              </div>
+              <br>
+              
+            </ul>
+          </div>
+</div>
+      </div>
+    </section>
+    <section id="resultspage">
+      <div class="jumbotron results-container"><img src="images/Artwork_4.png" alt="" width="8192" height="4980" class="img-fluid" id="resultpro">
+        <div class="centered">
+          <h1 class="text-center" id="result">Your are...</h1>
+          <div class="container-fluid"> </div>
+        </div>
+      </div>
+    
+      <div><img src="images/Artwork_9.png" alt="" width="8192" height="4980" class="img-fluid" id="resultinfo"></div>
+      <h5 class="text-center">but no one's just one thing. you're an enigma. no one's putting you n a box.&nbsp;</h5>
+      <h5 class="text-center">here are your first and second runner ups</h5>
+      <h5 class="text-center" id="result2">Your result is...</h5>
+      <h5 class="text-center" id="result3">Your result is...</h5>
+    </section>
+<hr>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © NAA. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  <script src = "QUIZ_script.js"></script> <!--quiz script-->
+  <br>
+  <br>
+  </body>
+</html>
